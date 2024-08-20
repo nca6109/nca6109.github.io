@@ -1,0 +1,14 @@
+{
+    "imgs": [
+        {"url": "./media/imgs/Armour.png", "name": "armour", "color": "rgba(237,173,51,0)","red":237,"green":173,"blue":51},
+        {"url": "./media/imgs/Buster.png", "name": "buster", "color": "rgba(24,162,209,0)","red":24,"green":162,"blue":209},
+        {"url": "./media/imgs/Cyclone.png", "name": "cyclone", "color": "rgba(255,255,255,0)","red":255,"green":255,"blue":255},
+        {"url": "./media/imgs/Eater.png", "name": "eater", "color": "rgba(27,27,27,0)","red":27,"green":27,"blue":27},
+        {"url": "./media/imgs/Enchant.png", "name": "enchant", "color": "rgba(167,2,193,0)","red":167,"green":2,"blue":193},
+        {"url": "./media/imgs/Purge.png", "name": "purge", "color": "rgba(30,249,19,0)","red":30,"green":249,"blue":19},
+        {"url": "./media/imgs/Shield.png", "name": "shield", "color": "rgba(232,112,17,0)","red":232,"green":112,"blue":17},
+        {"url": "./media/imgs/Speed.png", "name": "speed", "color": "rgba(26,2,200,0)","red":26,"green":2,"blue":200}
+    ],
+    "title": "Monado: I'm Really Feeling It!",
+    "instructions": "This web app plays music from Monolithsoft's Xenoblade Chronicles 1 and shows the \"Monado\" from the game reacting to the music.<br><b>Click on the screen</b> to use different \"Monado Arts\" that will alter the background color of the canvas and the circular \"Arts Window\" on the sword. If you don't want to see the waveform reactant blade beam or frequency reactant exhaust beams, toggle their respective checkboxes off. Switch the Monado into bass or treble mode with the corresponding check boxes and see the sword beam reflect the change in the music's balancing. Additional bitmap manipulating checkboxes are available to invert colors and emboss the window."
+}

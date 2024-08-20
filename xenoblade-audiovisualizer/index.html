@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Audio Visualizer</title>
+  <link href="./styles/default-styles.css" type="text/css" rel="stylesheet" />
+  <script src="./src/loader.js" type="module"></script>
+</head>
+<body>
+<main>
+  <h1></h1>
+  <canvas width="800" height="400"></canvas>
+  <div id="content">
+    <div id="controls">
+      <section id="music-control">
+        <button id="btn-play" data-playing="no"></button>
+      
+        <label>Track: 
+          <select id="track-select">
+            <option id="song" value="" selected></option>
+            <option id="song" value=""></option>
+            <option id="song" value=""></option>
+            <option id="song" value=""></option>
+          </select>
+        </label>
+      </section>
+    
+      <section>
+        <b>Volume:</b> <input type="range" id="slider-volume" min="0" max="2" value="1" step="0.01">
+        <span id="label-volume">???</span>
+      </section>
+      <section>
+        <b>Visual Changes:</b>
+        <span><input type="checkbox" id="cb-gradient" checked><label for="cb-gradient">Background</label></span>
+        <span><input type="checkbox" id="cb-sbeam" checked><label for="cb-sbeam">Sword Beam</label></span>
+        <span><input type="checkbox" id="cb-ebeam" checked><label for="cb-ebeam">Exhaust Beams</label></span>
+        <span><input type="checkbox" id="cb-circles" checked><label for="cb-circles">Arts Window</label></span>
+        <br>
+        <span><input type="checkbox" id="cb-invert" style="margin-left: 8.5rem;"><label for="cb-invert">Invert Colors</label></span>
+        <span><input type="checkbox" id="cb-emboss"><label for="cb-emboss">Emboss</label></span>
+      </section>
+      <section>
+        <b>Mode:</b>
+        <input type="radio" id="normal" name="beam-mode" value="normal" checked="checked">
+        <label for="html">Normal</label>
+        <input type="radio" id="treble" name="beam-mode" value="treble">
+        <label for="css">Treble</label>
+        <input type="radio" id="bass" name="beam-mode" value="bass">
+        <label for="javascript">Bass</label>
+      </section>
+    </div>
+    <div id="info">
+      <h2>Instructions</h2>
+      <p id="instructions"></p>
+    </div>
+  </div>
+</main>
+</body>
+</html>

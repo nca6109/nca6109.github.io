@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'XenoFont';
+  src: url("./media/fonts/HelveticaNeue-BlackItalic.otf") format("opentype");
+}
+
+body {
+  background: #eeeeee;
+  font-family: tahoma, verdana, sans serif;
+}
+  
+canvas {
+  margin-left: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+  background: #fafafa;
+}
+
+h1{
+  font-family: 'XenoFont', sans-serif;
+  font-size: 2.5rem;
+  color: #9b3039;
+  margin-left: 1rem;
+  margin-bottom: 0rem;
+  text-decoration: underline;
+}
+
+#content{
+  background-color: #6cd31e;
+  padding: 0.5rem;
+  width: 785px;
+  margin-left: 1rem;
+}
+
+#info,#controls{
+  background-color: rgba(135,206,235,0.75);
+  border-style: solid;
+  border-width: 4px;
+  border-color: #9b3039;
+  width: 720px;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /*margin-left: 20px;*/
+}
+
+#music-control{
+  font-size: 1rem;
+}
+#track-select{
+  font-size: 1rem;}
+
+h2{
+  margin-top: -.75rem;
+  margin-bottom: -.5rem;
+}
+
+#label-volume{
+  margin-left: 1rem;
+}
+
+section{
+  margin-bottom: 1rem;
+}
+
+#btn-play{
+  font-size: 1.2rem;
+  width: 6rem;
+}
+
+button[data-playing="yes"]:after{
+  content: "Pause";
+}
+
+button[data-playing="no"]:after{
+  content: "Play";
+}
