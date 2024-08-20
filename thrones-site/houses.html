@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.1">
+        <link rel="stylesheet" type="text/css" href="styles/searchStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+        <title>SIF: Houses</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="media/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="media/favicon/favicon-16x16.png" sizes="16x16" />
+        <script src="javascript/searchHouseJS.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div id="home"><a href="index.html"><em>A Song of Ice and Fire</em></a></div>
+            <div id="otherPages">
+                <div class="otherPage"><a href="index.html">Map</a></div>
+                |
+                <div class="otherPage"><a href="books.html">Books</a></div>
+                |
+                <div class="otherPage"><a href="characters.html">Characters</a></div>
+                |
+                <div class="otherPage"><a href="houses.html">Houses</a></div>
+            </div>
+        </nav>
+        <header>
+            <h2>Search for a House</h2>
+        </header>
+        <div class="searchOptions">
+            <div class="option">
+            <label for="searchterm">Enter a name or an index</label>
+            <input name="byName" id="searchterm" type="text" size="30" placeholder="House Targaryen of King's Landing" />
+            <div id="last"></div>
+            </div>
+            <div style="margin-right:2rem;">OR</div>
+            <div class="option">
+                <label for="regionDrop">Choose a Region:</label>
+                <select name="regions" id="regionDrop">
+                    <option value="none">Choose an Option</option>
+                    <option value="Beyond+the+Wall">Beyond the Wall</option>
+                    <option value="The+North">The North</option>
+                    <option value="Iron+Islands">Iron Islands</option>
+                    <option value="The+Riverlands">The Riverlands</option>
+                    <option value="The+Vale">The Vale</option>
+                    <option value="The+Westerlands">The Westerlands</option>
+                    <option value="The+Crownlands">The Crownlands</option>
+                    <option value="The+Reach">The Reach</option>
+                    <option value="The+Stormlands">The Stormlands</option>
+                    <option value="Dorne">Dorne</option>
+                </select>
+            </div>
+            <div style="margin-right:2rem;">OR</div>
+            <div class="option">
+                <label for="box">View All Houses</label>
+                <input type="checkbox" name="browseBox" id="box">
+            </div>
+        </div>
+        <button type="button" id="clear">CLEAR</button>
+        <button type="button" id="search">Search...<br /></button>
+        <div id="status">Ready to Search!</div>
+        <section></section>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.1">
+        <link rel="stylesheet" type="text/css" href="styles/searchStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <title>SIF: Characters</title>
+        <link rel="icon" type="image/png" href="media/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="media/favicon/favicon-16x16.png" sizes="16x16" />
+        <script src="javascript/searchCharsJS.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div id="home"><a href="index.html"><em>A Song of Ice and Fire</em></a></div>
+            <div id="otherPages">
+                <div class="otherPage"><a href="index.html">Map</a></div>
+                |
+                <div class="otherPage"><a href="books.html">Books</a></div>
+                |
+                <div class="otherPage"><a href="characters.html">Characters</a></div>
+                |
+                <div class="otherPage"><a href="houses.html">Houses</a></div>
+            </div>
+        </nav>
+        <header>
+            <h2>Search for a Character</h2>
+        </header>
+        <div class="searchOptions">
+            <div class="option">
+            <label for="searchterm">Enter a name or index</label>
+            <input id="searchterm" type="text" size="30" name="searchBar" placeholder="Jon Snow" />
+            <div id="last"></div>
+            </div>
+            <div style="margin-right:2rem;">OR</div>
+            <div class="option">
+                <label for="cultureDrop">Choose a Culture:</label>
+                <select name="cultures" id="cultureDrop">
+                    <option value="none">Choose an Option</option>
+                    <option value="andal">Andal</option>
+                    <option value="braavosi">Braavosi</option>
+                    <option value="crannogmen">Crannogmen</option>
+                    <option value="dornish">Dornish</option>
+                    <option value="dothraki">Dothraki</option>
+                    <option value="first+men">First Men</option>
+                    <option value="free+folk">Free Folk</option>
+                    <option value="ghiscari">Ghiscari</option>
+                    <option value="ibbenese">Ibbenese</option>
+                    <option value="ironborn">Ironborn</option>
+                    <option value="lhazareen">Lhazareen</option>
+                    <option value="lysene">Lysene</option>
+                    <option value="naathi">Naathi</option>
+                    <option value="northern+mountain+clans">Northern Mountain Clans</option>
+                    <option value="northmen">Northmen</option>
+                    <option value="norvoshi">Norvoshi</option>
+                    <option value="pentoshi">Pentoshi</option>
+                    <option value="qartheen">Qartheen</option>
+                    <option value="rhoynar">Rhoynar</option>
+                    <option value="rivermen">Rivermen</option>
+                    <option value="sistermen">Sistermen</option>
+                    <option value="tyroshi">Tyroshi</option>
+                    <option value="valemen">Valemen</option>
+                    <option value="valyrian">Valyrian</option>
+                    <option value="westerman">Westerman</option>
+                </select>
+            </div>
+            <div style="margin-right:2rem;">OR</div>
+            <div class="option">
+                <label for="box">View All Characters</label>
+                <input type="checkbox" name="browseBox" id="box">
+            </div>
+        </div>
+        <button type="button" id="clear">CLEAR</button>
+        <button type="button" id="search">Search...<br /></button>
+        <div id="status">Ready to Search!</div>
+        <section></section>
+    </body>
+</html>

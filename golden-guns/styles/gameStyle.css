@@ -1,0 +1,99 @@
+@font-face{
+    font-family: 'Big Cowboy';
+    src: url('../media/font/Cowboys.ttf');
+}
+@font-face{
+    font-family: "Lost";
+    src: url('../media/font/DirtyWestern.ttf');
+}
+body
+{
+    text-align: center;
+    background-color: #EAD7C3;
+    margin: 0;
+}
+header
+{
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #A62B00;
+    margin: 0 auto;
+    padding: 1rem 0 .5rem 1rem;
+    color: #E2B32B;
+}
+header h1
+{
+    margin: 0;
+    margin-right: 1rem;
+    padding: 0;
+    font-family: "Big Cowboy";
+    letter-spacing: .2rem;
+}
+header p
+{
+    margin-top: .5rem;
+    margin-left: 1rem;
+    font-size: x-large;
+}
+a:link
+{
+    color:#E2B32B;
+}
+a:visited
+{
+    color:#E2B32B;
+}
+a:hover
+{
+    color: #B77C1F;
+}
+a:active
+{
+    color: #FFDE2C;
+}
+main
+{
+    background-color: #D7B38C;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    width: fit-content;
+    margin: 0 auto 1rem auto;
+}
+#playerNameInput
+{
+    margin: 0 auto 1rem auto;
+    font-size: 2rem;
+    text-align: left;
+}
+#game
+{
+    border: 4px solid black;
+    width: 1010px;
+    height: 600px;
+    margin: 0 auto;
+}
+section
+{
+    text-align: left;
+    margin: 2rem auto;
+}
+
+@media screen and (max-width: 1064px)
+{
+#game
+{
+    margin: 0 auto;
+}
+main
+{
+    padding: 0;
+    margin: 0 auto;
+    justify-self: auto;
+}
+section
+{
+    padding-left: 1rem;
+}
+}
