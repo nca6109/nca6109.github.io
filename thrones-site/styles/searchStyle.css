@@ -1,0 +1,173 @@
+body
+{
+    background-color: #596873;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #414C54;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem .5rem 1rem;
+}
+#home
+{
+    text-align: left;
+    font-size: larger;
+    font-family: 'Cinzel Decorative', cursive;
+}
+#home a:link{color: #CA9645;}
+#home a:visited{color: #CA9645;}
+#home a:hover{border: 1px solid #CA9645; padding: 0 4px 0 2px;}
+nav a
+{
+    text-decoration: none;
+}
+nav a:link
+{
+    color: lightgray;
+}
+nav a:visited
+{
+    color: lightgray;
+}
+nav a:hover
+{
+    font-weight: bold;
+}
+#otherPages
+{
+    display: flex;
+    text-align: right;
+}
+.otherPage
+{
+    margin: 0 .5rem;
+}
+header
+{
+    padding-left: 1rem;
+}
+.searchOptions
+{
+    display: flex;
+    padding-left: 1rem;
+}
+.option
+{
+    margin-right: 2rem;
+}
+#search
+{
+    margin: .5rem 0 0 0;
+    width: 7rem;
+}
+#clear
+{
+    margin: .5rem 1rem 0 1rem;
+}
+#status
+{
+    padding: 1rem;
+    padding-bottom: 0;
+}
+section
+{
+    font-size: smaller;
+    margin: 0 auto .5rem auto;
+    padding: .5rem 1rem;
+    border-top: 3px solid #414C54;
+}
+section h1
+{
+    color: #CA9645;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.fullResult
+{
+    background-color: #5D6166;
+}
+.resultDiv
+{
+    break-inside: avoid-column;
+}
+#chars
+{
+    columns: 5;
+}
+#swornMembers
+{
+    columns: 4;
+}
+li
+{
+    margin-top: .5rem;
+}
+section ul ul
+{
+    margin-left: -2.5rem;
+    font-weight: bold;
+}
+section ul ul li
+{
+    margin-left: 2.5rem;
+    font-weight: normal;
+}
+.browseList
+{
+    list-style-type: none;
+}
+.browseList p
+{
+    font-size: 1rem;
+}
+.browseList h2
+{
+    font-size: 1.5rem;
+}
+#allWords{font-style: italic;}
+.resultDiv
+{
+    padding: 0 .5rem .5rem .5rem;
+    width: fit-content;
+    background-color: #5D6166;
+}
+#chars li
+{
+    margin-top: 0;
+}
+a:link
+{
+    color: #020202;
+}
+a:hover
+{
+    color: #383C3F;
+}
+a:visited
+{
+    color: #020202;
+}
+#pov li
+{
+    margin-top: 0;
+}
+#prev
+{
+    margin-top: .8rem;
+    margin-left: 2.5rem;
+}
+/* #pov a:link
+{
+    color: #020202;
+}
+#pov a:hover
+{
+    color: #1F2428;
+}
+#pov a:visited
+{
+    color: #020202;
+} */

@@ -1,0 +1,371 @@
+body
+{
+    background-color: #596873;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #414C54;
+    margin: 0 auto 1rem auto;
+    padding: 1rem 0rem .5rem 0;
+    width: 100%
+}
+#home
+{
+    text-align: left;
+    font-size: larger;
+    font-family: 'Cinzel Decorative', cursive;
+    padding-left: .5rem;
+}
+#home a:link{color: #CA9645;}
+#home a:visited{color: #CA9645;}
+#home a:hover{border: 1px solid #CA9645; padding: 0 4px 0 2px;}
+nav a
+{
+    text-decoration: none;
+}
+nav a:link
+{
+    color: lightgray;
+}
+nav a:visited
+{
+    color: lightgray;
+}
+nav a:hover
+{
+    font-weight: bold;
+}
+#otherPages
+{
+    display: flex;
+    text-align: right;
+    padding-right: .5rem;
+}
+.otherPage
+{
+    margin: 0 .5rem;
+}
+h1
+{
+    font-family: 'Cinzel Decorative', cursive;
+    color: #CA9645;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-shadow:-1px 1px 0 #202020,
+                1px 1px 0 #202020,
+                1px -1px 0 #202020,
+                -1px -1px 0 #202020;
+}
+header
+{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    width: max-content;
+    margin: .4rem auto;
+    border-left: 2px solid #CA9645;
+    border-right: 2px solid #CA9645;
+    color: #CA9645;
+    letter-spacing: .05rem;
+    background-color: #414C54;
+}
+.continent
+{
+    margin: .8rem 1rem;
+    text-decoration: underline;
+}
+section
+{
+    display: grid;
+    grid-template-columns: 362px 362px;
+    gap: 0px 5px;
+    font-size: smaller;
+    width: 724px;
+    margin: 0 auto .5rem auto;
+    padding: .5rem 8px;
+    background-color: #6C5840;
+    border: 5px solid #B97108;
+}
+/* sorting areas for grid */
+#name{font-size: 2.8rem; margin: auto auto;}
+#pride{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: .2rem 2rem;
+    background-color: #716852;
+}
+#sigil{
+    justify-self: center; 
+    margin: auto auto;}
+#region{
+    font-size: 1.5rem;}
+#words{
+    text-align: center; 
+    font-style: italic; 
+    font-weight: bold; 
+    font-size: 1.5rem;
+    margin: auto auto;
+    color: #1F2428;}
+#titles{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-size: 1rem;}
+#seats{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-size:1rem;}
+#currentLord{
+        margin-top:auto;
+        margin-bottom: auto;
+        font-size:1.25rem;}
+#heir{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-size:1.25rem;}
+#overlord{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-size:1.25rem;}
+#founded{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-size:1.25rem;}
+#founder{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-size:1.25rem;}
+#ancestralWeapons{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-size:1.25rem;}
+#cadetBranches{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-size:1.25rem;}
+#cadetBranches li{
+    font-size: 1rem;
+}
+#swornMembers{font-size: 1rem;}
+#swornMembers li{font-size: .8rem;}
+section h1
+{
+    color: #CA9645;
+    font-family: 'Cinzel Decorative', cursive;
+}
+section ul
+{
+    margin-left: -2.5rem;
+    font-weight: bold;
+}
+section ul li
+{
+    margin-left: 2.5rem;
+    font-weight: normal;
+}
+section a:link
+{
+    color: #111315;
+}
+section a:visited
+{
+    color: #111315;
+}
+section a:hover {color: #383C3F;}
+#map
+{
+    width: 750px;
+    height: 750px;
+    position: relative;
+    margin: 1rem auto;
+}
+#mapImg
+{
+    width: 750px;
+    height: 750px;
+    z-index: -1;
+}
+footer
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: .5rem 0 1rem 0;
+    color: #202020;
+    border-top: 2px solid #202020;
+    background-color: #414C54;
+}
+footer div
+{
+    margin: 0 1.5rem;
+}
+footer a:link
+{
+    color: lightgray;
+}
+footer a:visited
+{
+    color: lightgray;
+}
+/*below is the placement info for all of the house crests*/
+#arryn
+{   
+    position: absolute;
+    /*central*/
+    /* top: 490px;
+    left: 517px; */
+    width: 40px;
+    height: 40px;
+}
+#baelish
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /*central
+    top: 590px;
+    left: 420px;*/
+    /*south*/
+    /* top: 95px;
+    left: 420px; */
+}
+#baratheonD
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /*central
+    top: 645px;
+    left: 630px;*/
+    /*south*/
+    /* top: 147px;
+    left: 632px; */
+    
+}
+#baratheon
+{
+    position: absolute;
+    /*central
+    width: 25px;
+    height: 25px;
+    top: 725px;
+    left: 490px;*/
+    /*south*/
+    /* width: 40px;
+    height: 40px;
+    top: 228px;
+    left: 485px; */
+}
+#bolton
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /*north
+    top: 465px;
+    left: 508px;*/
+    /*central*/
+    /* top: 55px;
+    left: 508px; */
+}
+#frey
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /*central*/
+    /* top: 429px;
+    left: 325px; */
+}
+#greyjoy
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /*central
+    top: 502px;
+    left: 135px;*/
+    /*south*/
+    /* top: 8px;
+    left: 135px; */
+}  
+#lannister
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /*central
+    top: 659px;
+    left: 125px;*/
+    /*south*/
+    /* top: 165px;
+    left: 125px; */
+}
+#manderly
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /*north
+    top: 642px;
+    left: 437px;*/
+    /*central*/
+    /* top: 235px;
+    left: 437px; */
+}
+#martell
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /*south*/
+    /* top: 598px;
+    left: 619px; */
+}
+#stark
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /*north
+    top: 494px;
+    left: 347px;*/
+    /*central*/
+    /* top: 85px;
+    left: 347px; */
+}
+#targaryen
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    /*essos*/
+    /* top: 400px;
+    left: 350px; */
+}
+#tully
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /*central
+    top: 556px;
+    left: 310px;*/
+    /*south*/
+    /* top: 60px;
+    left: 310px; */
+}
+#tyrell
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /*south*/
+    /* top: 410px;
+    left: 208px; */
+}
