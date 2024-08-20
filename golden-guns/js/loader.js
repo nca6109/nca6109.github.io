@@ -1,0 +1,12 @@
+app.loader.onProgress.add(e => { console.log(`progress=${e.progress}`) });
+app.loader.add("badGuy", "./media/RudySpriteSheets/spritesheetlarger.png");
+app.loader.add("cowboy", "./media/RudySpriteSheets/spritesheetreflected.png");
+app.loader.add("cylinder", "./media/chamber.png");
+app.loader.add("bullet", "./media/bullet.png");
+app.loader.add("gunShot", "./media/sounds/gun-reload.mp3");
+app.loader.add("gunClick", "./media/sounds/gun-shot.wav");
+app.loader.add("click", "./media/sounds/button-click2.wav");
+app.loader.add("ricochet", "./media/sounds/ricochet.wav");
+app.loader.onComplete.add(setup);
+app.loader.onComplete.add(enterButtonControl);
+app.loader.load();
