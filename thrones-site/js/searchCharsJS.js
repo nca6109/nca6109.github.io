@@ -259,7 +259,6 @@ function dataError(e){
 function characterLoaded(e)
 {
     let xhr = e.target;
-
     //console.log(xhr.responseText);
     try{let thing = JSON.parse(xhr.responseText);}
     catch(error)
@@ -313,6 +312,7 @@ function pageLoaded2(e){
     //fill houses with objects created from json obj
     for(let person of obj)
     {
+        console.log(person);
         let newCharacter = makeCharacter(person.url, person.name, person.gender, person.culture, person.born, person.died, person.titles, person.aliases, person.father, person.mother, person.spouse, person.allegiances, person.books, person.povBooks, person.tvSeries, person.playedBy);
         characters.push(newCharacter);
     }
@@ -614,7 +614,7 @@ function assignCharactersHandlers()
     }
 }
 
-//Function fills the section with houses that can hyperlink to their full information and has the next page buttons
+//Function fills the section with characters that can hyperlink to their full information and has the next page buttons
 function printCharacterBrowsing()
 {
     //Clear the section if it is full
@@ -647,11 +647,13 @@ function printCharacterBrowsing()
             culture.innerHTML = "Culture: None";
         }
         div.appendChild(culture);
-        let title = document.createElement("p");
-        title.className = "title";
-        title.innerHTML = person.titles[0];
-        title.style.fontStyle = "italic";
-        div.appendChild(title);
+            if(person.titles[0]){
+            let title = document.createElement("p");
+            title.className = "title";
+            title.innerHTML = person.titles[0];
+            title.style.fontStyle = "italic";
+            div.appendChild(title);
+        }
         let link = document.createElement("a");
         link.href = "characters.html";
         link.target = "_blank";

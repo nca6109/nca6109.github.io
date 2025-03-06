@@ -247,7 +247,6 @@ function houseLoaded1(e)
 {
     let xhr = e.target;
 
-    //console.log(xhr.responseText);
     try{let thing = JSON.parse(xhr.responseText);}
     catch(error)
     {
@@ -277,8 +276,9 @@ function houseLoaded1(e)
     if(house.founder){findCharacter("founder");}
     if(house.cadetBranches.length>0){findHouses("cadetBranches");}
     if(house.swornMembers.length>0){findMembers();}
+    checkToPrintHouse();
 
-    //Send the hosue to local storage for being the last on searched
+    //Send the house to local storage for being the last on searched
     sendLastHouse(house);
 }
 
@@ -286,7 +286,6 @@ function houseLoaded1(e)
 function pageLoaded3(e){
     let xhr = e.target;
 
-    //console.log(xhr.responseText);
     try{let thing = JSON.parse(xhr.responseText);}
     catch(error)
     {

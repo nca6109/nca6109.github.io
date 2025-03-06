@@ -508,7 +508,7 @@ function createPopUp()
             item.appendChild(document.createTextNode(`Ancestral Weapons: ${house[key]}`));
             section.appendChild(item);
         }
-        else if((key=="swornMembers"/*&&house[key].length>1*/)){}
+        else if((key=="swornMembers")){}
         else
         {
             let item = document.createElement("h3");
@@ -555,7 +555,6 @@ function createPopUp()
         section.style.width="974px";
         section.style.gridTemplateColumns = "500px 500px";
         section.style.gridTemplateRows = `220px 50px repeat(${leftRow-2}, 125px)`;}
-    //section.appendChild(list);
     document.body.insertBefore(section, document.querySelector("footer"));
     //remove margin between map and section
     document.querySelector("#map").style.marginBottom = "0";
@@ -636,90 +635,86 @@ function placeHouses()
     {
         case "north-westeros":
             //Houses: bolton, stark, manderly
-            // let bolton = document.querySelector("#bolton");
             bolton.style.top = "465px";
             bolton.style.left = "508px";
-            // let stark = document.querySelector("#stark");
             stark.style.top = "494px";
             stark.style.left = "347px";
-            // let manderly = document.querySelector("#manderly");
             manderly.style.top = "642px";
             manderly.style.left = "437px";
             break;
         case "central-westeros":
             //Houses: arryn, baelish, baratheonD, baratheon, bolton, frey, greyjoy, lannister, maderly, stark, tully
-            // let arryn = document.querySelector("#arryn");
             arryn.style.top = "490px";
             arryn.style.left = "517px";
-            // let baelish = document.querySelector("#baelish");
+
             baelish.style.top = "590px";
             baelish.style.left = "420px";
-            // let baratheonD = document.querySelector("#baratheonD");
+
             baratheonD.style.top = "645px";
             baratheonD.style.left = "630px";
-            // let baratheon = document.querySelector("#baratheon");
+
             baratheon.style.top = "725px";
             baratheon.style.left = "490px";
             baratheon.style.width = "25px";
             baratheon.style.height = "25px";
-            // bolton = document.querySelector("#bolton");
+
             bolton.style.top = "55px";
             bolton.style.left = "508px";
-            // let frey = document.querySelector("#frey");
+
             frey.style.top = "429px";
             frey.style.left = "325px";
-            // let greyjoy = document.querySelector("#greyjoy");
+
             greyjoy.style.top = "502px";
             greyjoy.style.left = "135px";
-            // let lannister = document.querySelector("#lannister");
+
             lannister.style.top = "659px";
             lannister.style.left = "125px";
-            // manderly = document.querySelector("#manderly");
+
             manderly.style.top = "235px";
             manderly.style.left = "437px";
-            // stark = document.querySelector("#stark");
+
             stark.style.top = "85px";
             stark.style.left = "347px";
-            // let tully = document.querySelector("#tully");
+
             tully.style.top = "556px";
             tully.style.left = "310px";
             break;
         case "south-westeros":
             //Houses: baelish, baratheonD, baratheon, greyjoy, lannister, martell, tully, tyrell
-            // baelish = document.querySelector("#baelish");
             baelish.style.top = "95px";
             baelish.style.left = "420px";
-            // baratheonD = document.querySelector("#baratheonD");
+            
             baratheonD.style.top = "147px";
             baratheonD.style.left = "632px";
-            // baratheon = document.querySelector("#baratheon");
+            
             baratheon.style.top = "228px";
             baratheon.style.left = "485px";
             baratheon.style.width = "40px";
             baratheon.style.height = "40px";
-            // greyjoy = document.querySelector("#greyjoy");
+            
             greyjoy.style.top = "8px";
             greyjoy.style.left = "135px";
-            // lannister = document.querySelector("#lannister");
+            
             lannister.style.top = "165px";
             lannister.style.left = "125px";
-            // let martell = document.querySelector("#martell");
+            
             martell.style.top = "598px";
             martell.style.left = "619px";
-            // tully = document.querySelector("#tully");
+            
             tully.style.top = "60px";
             tully.style.left = "310px";
-            // let tyrell = document.querySelector("#tyrell");
+            
             tyrell.style.top = "410px";
             tyrell.style.left = "208px";
             break;
         case "essos":
-            // let targaryen = document.querySelector("#targaryen");
+            //Houses: Targaryen
             targaryen.style.top = "400px";
             targaryen.style.left = "350px";
             break;
     }
 }
+
 //destroy imgs to be recreated
 function destroyHouses()
 {
